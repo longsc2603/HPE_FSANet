@@ -15,3 +15,24 @@ python3 demo.py --video /path/to/video.mp4
 ```
 python3 demo.py --cam 0
 ```
+## Traing and testing
+For training, checkout the notebook: **src/2-Train Model.ipynb**.
+
+I make a Python file from that named **src/train_fsa.py** in case you want to run locally and not on Google Colab.
+## Dataset
+For model training and testing, download the preprocessed dataset from author's official git repository1 and place them inside data/ directory. Your dataset hierarchy should look like:
+```
+data/
+  type1/
+    test/
+      AFLW2000.npz
+    train/
+      AFW.npz
+      AFW_Flip.npz
+      HELEN.npz
+      HELEN_Flip.npz
+      IBUG.npz
+      IBUG_Flip.npz
+      LFPW.npz
+      LFPW_Flip.npz
+```
