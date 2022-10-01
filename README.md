@@ -13,8 +13,9 @@ python3 demo.py --cam 0
 ```
 ## Traing and testing
 For training, checkout the notebook: **src/2-Train Model.ipynb**.
+For testing, checkout the notebook: **src/2-Test Model.ipynb**.
 
-I make a Python file from that named **src/train_fsa.py** in case you want to run locally and not on Google Colab.
+I make two Python files from those notebooks named **src/train_fsa.py** and **src/test_fsa.py** in case you want to run locally and not on Google Colab.
 ## Dataset
 For model training and testing, download the preprocessed dataset from author's official git repository1 and place them inside data/ directory. Your dataset hierarchy should look like:
 ```
