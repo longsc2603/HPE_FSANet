@@ -18,7 +18,7 @@ For testing, checkout the notebook: **src/2-Test Model.ipynb**.
 
 I make two Python files from those notebooks named **src/train_fsa.py** and **src/test_fsa.py** in case you want to run locally instead of using Google Colab.
 ## Dataset
-For model training and testing, download the preprocessed dataset from author's official git repository1 and place them inside data/ directory. Your dataset hierarchy should look like:
+For model training and testing, you can download the preprocessed dataset from author's official git repository and place them inside the data/ directory. Your dataset hierarchy should look like this:
 ```
 data/
   type1/
