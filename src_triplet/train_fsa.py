@@ -56,7 +56,7 @@ learning_rate = 75e-4
 optimizer = optim.AdamW(model.parameters(), lr=learning_rate)
 scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=20, gamma=0.9)
 
-device = torch.device("cpu")
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using {device}")
 model = model.to(device)
 
