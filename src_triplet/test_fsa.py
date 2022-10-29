@@ -32,7 +32,7 @@ chkpt_dic = torch.load('checkpoints/27_10_2022.chkpt')
 model.load_state_dict(chkpt_dic['best_states']['model'])
 
 # Place all the necessary things in GPU
-device = torch.device("cpu")
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using {device}")
 model.to(device)
 
